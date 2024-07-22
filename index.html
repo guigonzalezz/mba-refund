@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container">
+        <img src="assets/logo.svg" alt="Refund Logo">
+    </header>
+
+    <div class="container flex gap-1.25">
+        <section class="padding-base bg-base br-base">
+            <h1>Refund Request</h1>
+            <p>Provide the expense details to request a refund.
+                The expense will be reviewed and refunded within 30 days.
+            </p>
+
+            <form class="flex flex-col gap-2">
+                <div class="inputsForm">
+                    <div class="input-wrapper">
+                        <label for="title">Expense Title</label>
+                        <input type="text" name="title" id="title" required>
+                    </div>
+
+                    <div class="flex gap-1">
+                        <div class="input-wrapper flex-1">
+                            <label for="category">Category</label>
+                            <select id="category" name="category" required>
+                                <option value="">Select</option>
+                                <option value="food">Food</option>
+                                <option value="accommodation">Accommodation</option>
+                                <option value="services">Services</option>
+                                <option value="transport">Transport</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="amount">Amount</label>
+                            <input type="text" name="amount" id="amount" placeholder="$ 0.00" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+
+        <aside class="padding-base bg-base br-base">
+            <header class="header-aside">
+                <span>My Requests <small id="expensesNumber">0 expense</small></span>
+                <span><small>$</small><strong id="expensesTotal">0.00</strong></span>
+            </header>
+            <section>
+                <ul></ul>
+            </section>
+        </aside>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

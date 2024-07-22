@@ -1,0 +1,42 @@
+.container {
+    --max-width: 70rem;
+    --px-lg: 5rem;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-1\.25 {
+    gap: 1.25rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.padding-base {
+    padding: 2.5rem;
+}
+
+.bg-base {
+    background-color: var(--gray-500);
+}
+
+.br-base {
+    border-radius: 1rem;
+}

@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray-100: #1F2523;
+    --gray-200: #4D5C57;
+    --gray-300: #CDD5D2;
+    --gray-400: #E4ECE9;
+    --gray-500: #F9FBFA;
+    --white: #FFFFFF;
+    --green-100: #1F8459;
+    --green-200: #2CB178;
+    --danger: #B51919;
+
+    --ff-sans: 'Open Sans', sans-serif;
+
+    --heading-lg: 700 1.25rem/2.4 var(--ff-sans);
+    --heading-md: 700 1rem/2 var(--ff-sans);
+    --heading-sm: 700 0.875rem/1.8 var(--ff-sans);
+
+    --subheading: 600 0.875rem/1.8 var(--ff-sans);
+
+    --body-lg-bold: 700 1rem/2 var(--ff-sans);
+    --body-lg-reg: 400 1rem/2 var(--ff-sans);
+
+    --body-md-bold: 700 0.875rem/1.8 var(--ff-sans); 
+    --body-md-reg: 400 0.875rem/1.8 var(--ff-sans);
+
+    --body-sm: 400 0.75rem/1.6 var(--ff-sans);
+
+    --label: 700 0.625rem/1.4 var(--ff-sans);
+    --label-regular: 400 0.625rem/1.4 var(--ff-sans);
+}
+
+body {
+    background-color: var(--gray-400);
+}
+
+h1 {
+    color: var(--gray-100);
+    font: var(--heading-lg);
+}
+
+p {
+   color: var(--gray-200); 
+   font: var(--body-md-reg);
+}
+
+label {
+    color: var(--gray-200, #4D5C57);
+    font: var(--label-regular);
+    text-transform: uppercase;
+}
+
+input, select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding: 0px 1rem;
+
+    border-radius: .5rem;
+    border: 1px solid var(--gray-300);
+
+    background-color: transparent;
+    outline: none;
+
+    font: var(--body-md-reg);
+    color: var(--gray-200);
+
+}
+
+select {
+    appearance: none;
+    background-image: url(/assets/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 1.25rem;
+}
+
+input::placeholder,
+select:invalid {
+  color: #4d5c57;
+}
+
+input:focus,
+select:focus {
+  border: 1.5px solid #1f8459;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3rem;
+    padding: 0 1.25rem;
+
+    border-radius: .5rem;
+    background-color: var(--green-100);
+
+    color: var(--white);
+    text-align: center;
+
+    font: var(--body-md-bold);
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--green-200);
+}
+
+

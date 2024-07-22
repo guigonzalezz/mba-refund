@@ -1,0 +1,117 @@
+aside {
+    display: flex;
+    flex-direction: column; /* Distribui os filhos em uma coluna */
+    width: 32.5rem;
+
+    & .header-aside {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 0;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--gray-400);
+
+        & span:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+
+            font: var(--body-lg-reg);
+            color: var(--gray-200);
+
+            & small {
+                color: var(--gray-200);
+                font: var(--label-regular);
+                text-transform: uppercase;
+            }
+        }
+
+        & span:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 4px;
+
+            & small {
+                color: var(--gray-200);
+                font: var(--body-sm);
+                text-transform: uppercase;
+            }
+
+            & strong {
+                font: var(--heading-md);
+                color: var(--gray-100);
+            }
+        }
+    }
+
+    section {
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+
+            gap: 1rem;
+
+            & li {
+                display: flex;
+                align-items: center;
+
+                & > img {
+                    margin-right: 0.875rem;
+                }
+
+                & div:nth-child(2) {
+                    display: flex;
+                    flex-direction: column;
+
+                    & span:nth-child(1) {
+                        font: var(--heading-sm);
+                        color: var(--gray-100);
+                    }
+
+                    & span:nth-child(2) {
+                        font: var(--body-sm);
+                        color: var(--gray-200);
+                        text-transform: capitalize;
+                    }
+
+                }
+
+                & div:last-child {
+                    margin-left: auto;
+
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+
+                    & small {
+                        color: var(--gray-200);
+                        text-transform: uppercase;
+                        font: var(--body-sm);
+                    }
+
+                    & strong {
+                        color: var(--gray-100);
+                        font: var(--subheading);
+                    }
+
+                    img {
+                        padding: 6px;
+                        border-radius: 4px;
+                        transition: background-color .2s;
+                        cursor: pointer;
+                        
+                        &:hover {
+                            background-color: var(--gray-400);
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+}
